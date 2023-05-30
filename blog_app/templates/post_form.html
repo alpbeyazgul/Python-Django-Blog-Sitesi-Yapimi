@@ -1,0 +1,15 @@
+<!-- blog_app/templates/blog/post_form.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Yazı Ekle/Düzenle - Blog{% endblock %}
+
+{% block content %}
+  <h1>{{ form_title }}</h1>
+  
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Gönder</button>
+  </form>
+{% endblock %}
