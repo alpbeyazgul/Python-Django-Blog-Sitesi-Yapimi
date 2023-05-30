@@ -1,0 +1,13 @@
+<!-- blog_app/templates/blog/post_detail.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }} - Blog{% endblock %}
+
+{% block content %}
+  <div class="post">
+    <h2>{{ post.title }}</h2>
+    <p class="meta">{{ post.published_date }}</p>
+    <p>{{ post.content }}</p>
+  </div>
+{% endblock %}
