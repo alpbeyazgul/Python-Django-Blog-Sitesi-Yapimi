@@ -1,1 +1,20 @@
+<!-- blog_app/templates/blog/home.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Ana Sayfa - Blog{% endblock %}
+
+{% block content %}
+  <h1>Hoş Geldiniz!</h1>
+  
+  {% for post in posts %}
+    <div class="post">
+      <h2><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h2>
+      <p class="meta">{{ post.published_date }}</p>
+      <p>{{ post.content }}</p>
+    </div>
+  {% empty %}
+    <p>Henüz hiç yazı bulunmamaktadır.</p>
+  {% endfor %}
+{% endblock %}
 
