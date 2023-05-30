@@ -1,1 +1,15 @@
+## Kurulum
 
+1. Bu depoyu klonlayın: `git clone https://github.com/kullanici/adresi.git`
+2. Proje dizinine gidin: `cd blog-uygulamasi`
+3. Sanal bir ortam oluşturun ve etkinleştirin: `python -m venv venv` ve `source venv/bin/activate` (Linux) veya `venv\Scripts\activate` (Windows)
+4. Gerekli bağımlılıkları yükleyin: `pip install -r requirements.txt`
+5. Veritabanını oluşturun: `python manage.py migrate`
+6. Geliştirme sunucusunu başlatın: `python manage.py runserver`
+
+## Kullanım
+
+- Uygulamayı tarayıcınızda açın ve http://localhost:8000 adresine gidin.
+- Kayıt olun veya giriş yapın.
+- Yeni bir blog yazısı oluşturun, düzenleyin veya silin.
+- Diğer kullanıcıların yazılarını görüntüleyin ve yorum yapın.
