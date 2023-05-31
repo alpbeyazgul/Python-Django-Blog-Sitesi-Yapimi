@@ -1,5 +1,5 @@
 # Python-Django-Blog-Sitesi-Yapimi
-Bu içeriğimizde Python/Django kullanılarak basit bir [kişisel blog]([https://medium.com/@alpbeyazgul]) sitesi hazırladık.
+Bu içeriğimizde Python/Django kullanılarak basit bir [kişisel blog][https://medium.com/@alpbeyazgul] sitesi hazırladık.
 
 # Blog Uygulaması
 
